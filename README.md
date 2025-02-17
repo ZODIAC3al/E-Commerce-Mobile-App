@@ -17,7 +17,7 @@ A **React Native** e-commerce mobile application built with **NativeBase** for U
 - **Backend**: Supabase (Authentication, Database, Storage)
 - **State Management**: React Context API / React Query
 
-## 📂 Folder Structure
+##  Folder Structure
 
 ```
 /root
@@ -41,7 +41,7 @@ A **React Native** e-commerce mobile application built with **NativeBase** for U
  ├── App.js           # Entry Point
 ```
 
-## ⚡ Installation & Setup
+##  Installation & Setup
 
 1. **Clone the Repository**
 
