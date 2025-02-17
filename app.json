@@ -2,6 +2,9 @@
   "expo": {
     "name": "mosh-course",
     "slug": "mosh-course",
+    "extra": {
+      "projectId": "9acae4e2-35d8-4ced-be72-47b42194dbe7"
+    },
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -32,7 +35,8 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      ]
+      ],
+      "expo-font"
     ],
     "experiments": {
       "typedRoutes": true

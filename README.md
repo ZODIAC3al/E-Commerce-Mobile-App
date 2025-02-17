@@ -1,50 +1,94 @@
-# Welcome to your Expo app 👋
+#  E-Commerce Mobile App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A **React Native** e-commerce mobile application built with **NativeBase** for UI and **Supabase** for authentication and data storage. The app provides a seamless shopping experience with features like product listings, deals, authentication, and light & dark mode support.
 
-## Get started
+##  Features
 
-1. Install dependencies
+- 🔹 **User Authentication** (Sign up, Login, Logout) using Supabase
+- 🔹 **Product Listings** with detailed view
+- 🔹 **Deals & Discounts** dynamically applied to products
+- 🔹 **Dark & Light Mode** with persistent theme settings
+- 🔹 **Cart & Checkout** (Planned)
+- 🔹 **Wishlist** (Planned)
 
-   ```bash
-   npm install
-   ```
+##  Tech Stack
 
-2. Start the app
+- **Frontend**: React Native, NativeBase, Expo Router
+- **Backend**: Supabase (Authentication, Database, Storage)
+- **State Management**: React Context API / React Query
 
-   ```bash
-    npx expo start
-   ```
+## 📂 Folder Structure
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+/root
+ ├── app
+ │   ├── _layout.js  # Main layout
+ │   ├── index.jsx    # Home Screen
+ │   ├── (auth)/      # Authentication Screens
+ │   │   ├── _layout.js
+ │   │   ├── login.jsx
+ │   │   ├── signup.jsx
+ │   ├── (tabs)/      # Bottom Tab Screens
+ │   │   ├── _layout.js
+ │   │   ├── profile.jsx
+ │   ├── products/    # Product Details
+ │   │   ├── [id].jsx
+ ├── components/      # Reusable UI Components
+ ├── hooks/           # Custom Hooks
+ ├── utils/           # Utility Functions
+ ├── services/        # API Calls
+ ├── styles/          # Global Styles
+ ├── App.js           # Entry Point
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## ⚡ Installation & Setup
 
-## Learn more
+1. **Clone the Repository**
 
-To learn more about developing your project with Expo, look at the following resources:
+   ```sh
+   git clone https://github.com/your-username/your-repo.git
+   cd your-repo
+   ```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+2. **Install Dependencies**
 
-## Join the community
+   ```sh
+   npm install
+   # or
+   yarn install
+   ```
 
-Join our community of developers creating universal apps.
+3. **Set Up Environment Variables**
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+   Create a `.env` file in the root directory and add your Supabase credentials:
+
+   ```sh
+   SUPABASE_URL=your_supabase_url
+   SUPABASE_ANON_KEY=your_supabase_anon_key
+   ```
+
+4. **Run the App**
+
+   ```sh
+   npx expo start
+   ```
+
+##  Future Improvements
+
+-  **Cart & Checkout** integration
+-  **Payment Gateway** support
+-  **Order History & Tracking**
+-  **Push Notifications**
+
+##  Contributing
+
+Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change.
+
+##  License
+
+This project is licensed under the **MIT License**.
+
+---
+
+ **Made with ❤️ by Ali Maher**
+
